@@ -21,14 +21,18 @@ provided by the written explanation.
 ## Your Explanation Here
 
 At the beginning I applied a simple refactoring removing conditionals and
-abstracting the create hash logic in a function. Then, I realized it could be a
+abstracting the create hash logic in a function.
+
+Then, I realized it could be a
 good opportunity to implement some functional programming concepts. We are
 splitting the function on smaller pure functions units that can be tested
-independently and composed together to perform the deterministicPartitionKey
+independently and composed together to perform the _deterministicPartitionKey_
 work.
 
-Utterly you can see at the deterministicPartitionKey pipe and read the functions
-it is composed of. This improves readability and it is simpler to understand
+Utterly you can see at the _deterministicPartitionKey_ _pipe_ and read the functions
+it is composed of.
+
+This improves readability and it is simpler to understand
 since each function has a single responsability and the result it is just a
 composition of each result, further more each function can be unit tested and
 reusable. Part of this logic can be extracted in an utils file.
