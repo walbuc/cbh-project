@@ -53,12 +53,12 @@ Scenario: Add new custom agent id.
 
 Development Tasks Breakdown:
 
-1. Add new custom_id column to Agent database. -sp: 2. -label: backend
-   -Implementation Detail: Update Prisma schema add a new custom_id column of ID
+1. Add new custom_id column to Agent database. - sp: 2. - label: backend
+   - Implementation Detail: Update Prisma schema add a new custom_id column of ID
    type that
 
-2. Add new custom id to new agent form. - sp: 1. -label: frontend
-   -Implementation Detail: Add new form field with "Agent ID" label. Make sure
+2. Add new custom id to new agent form. - sp: 1. - label: frontend
+   - Implementation Detail: Add new form field with "Agent ID" label. Make sure
    this id is required. Update integration test.
 
 User Story: As a client Facility I want to generate a quarter report using the
@@ -70,10 +70,10 @@ custom agent id. Scenario: Generate facility report
 
 Development Tasks Breakdown:
 
-1. Update getShiftsByFacility function -sp: 2. -label: backend. -Implementation
+1. Update getShiftsByFacility function - sp: 2. - label: backend. - Implementation
    Detail: Updated getShiftsByFacility function to get Agent metadata with
    custom_id field to be used when generating a report. Update Unit Tests.
 
-2. Update generateReport function. -sp: 2. -label: backend. -Implementation
+2. Update generateReport function. - sp: 2. - label: backend. - Implementation
    Detail: Update function to use custom_id Agent field to get Agent data.
    Update Unit Tests.
