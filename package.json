@@ -1,0 +1,25 @@
+{
+  "name": "clipboardhealth",
+  "version": "1.0.0",
+  "description": "frontend test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start:local": "ts-node-dev --respawn --transpile-only src/dpk.ts | pino-pretty -c"
+  },
+  "author": "walter buczacka",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "jest": "^29.5.0",
+    "jest-in-case": "^1.0.2",
+    "pino-pretty": "^10.0.0",
+    "ramda": "^0.28.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.28.23"
+  }
+}
