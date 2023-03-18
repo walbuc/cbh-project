@@ -38,20 +38,20 @@ Story Points Unit reference: 1 to 8. Meaning 1 the least amount Unit of
 time/effort and 8 the max amount Unit of time/effort. Ideally a taks with a
 story point of 8 should not take more than one day. If so, this could be a
 
-User Story:
+**User Story:**
 
 1. As a client Facility I want to save my own custom id for each Agent.
 
-Scenario: Add new custom agent id.
+**Scenario:** Add new custom agent id.
 
 1. Given that a facility exists in the database.
 2. When the client facility navigates to the new agent page.
-3. And enters the new agent information
-4. And enters the Custom agent id
-5. Then the system creates a new record in the Agent database
+3. And enters the new agent information.
+4. And enters the Custom agent id.
+5. Then the system creates a new record in the Agent Table.
 6. And displays a "Successfully created agent" message.
 
-Development Tasks Breakdown:
+**Development Tasks Breakdown:**
 
 1. Add new custom_id column to Agent resource.
 - sp: 2. 
@@ -66,14 +66,18 @@ Development Tasks Breakdown:
    
 Update integration test.
 
-User Story: As a client Facility I want to generate a quarter report using the
-custom agent id. Scenario: Generate facility report
+**User Story:**
+
+2. As a client Facility I want to generate a quarter report using the
+custom agent id. Scenario: Generate facility report.
+
+**Scenario:** Generate pdf repor for client facility.
 
 1. Given the facility client navigates to the admin page.
 2. When the facility client clicks on the "Generate Quarter Report" button.
 3. Then the system creates a new PDF report using the custom agent id.
 
-Development Tasks Breakdown:
+**Development Tasks Breakdown:**
 
 1. Update getShiftsByFacility function.
 - sp: 2.
