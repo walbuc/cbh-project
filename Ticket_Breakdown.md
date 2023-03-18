@@ -53,27 +53,40 @@ Scenario: Add new custom agent id.
 
 Development Tasks Breakdown:
 
-1. Add new custom_id column to Agent database. - sp: 2. - label: backend
-   - Implementation Detail: Update Prisma schema add a new custom_id column of ID
-   type that
+1. Add new custom_id column to Agent resource.
+- sp: 2. 
+- label: backend.
+- Implementation Detail: Update Prisma schema and add a new custom_id column of ID type on the Agent schema.
 
-2. Add new custom id to new agent form. - sp: 1. - label: frontend
-   - Implementation Detail: Add new form field with "Agent ID" label. Make sure
-   this id is required. Update integration test.
+2. Add new custom id to new agent form.
+- sp: 1.
+- label: frontend.
+- Implementation Detail: Add new form field with "Agent ID" label. Make sure
+   this id is required.
+   
+Update integration test.
 
 User Story: As a client Facility I want to generate a quarter report using the
 custom agent id. Scenario: Generate facility report
 
-1. Given the facility client navigates to the admin page
-2. When the facility client clicks on the "Generate Quarter Report" button
+1. Given the facility client navigates to the admin page.
+2. When the facility client clicks on the "Generate Quarter Report" button.
 3. Then the system creates a new PDF report using the custom agent id.
 
 Development Tasks Breakdown:
 
-1. Update getShiftsByFacility function - sp: 2. - label: backend. - Implementation
+1. Update getShiftsByFacility function.
+- sp: 2.
+- label: backend.
+- Implementation
    Detail: Updated getShiftsByFacility function to get Agent metadata with
-   custom_id field to be used when generating a report. Update Unit Tests.
+   custom_id field to be used when generating a report.
+   
+Update the necessaries Unit Tests.
 
-2. Update generateReport function. - sp: 2. - label: backend. - Implementation
-   Detail: Update function to use custom_id Agent field to get Agent data.
-   Update Unit Tests.
+2. Update generateReport function.
+- sp: 2.
+- label: backend.
+- Implementation Detail: Update function to use custom_id Agent field to get Agent data.
+
+Update the necessaries Unit Tests.
